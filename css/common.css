@@ -160,7 +160,16 @@ a:hover {
   display: table;
   clear: both;
 }
+.layout {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 #header {
   background: #1c1f24;
   height: 206px;
+}
+#footer {
+  background: #373a3f;
+  min-height: 100px;
 }
