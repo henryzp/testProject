@@ -7,7 +7,10 @@
         float: left;
         width: 318px;
         min-height: 100px;
-        background: red;
+        background: #373a3f;
+        .hd{
+            
+        }
     }
     .info-list{
         margin-left: 355px;
@@ -16,12 +19,66 @@
         ul{
             margin-right: -44px;
         }
-        li{
-            width: 251px;
-            height: 246px;
+        .item{
+            width: 252px;
+            height: 247px;
             float: left;
             margin: 0 44px 44px 0;
-            background: green;
+            position: relative;
+            &:hover{
+                .img-area{
+                    opacity: 0;
+                }
+                .text-area{
+                    opacity: 1;
+                }
+            }
+        }
+        .img-area{
+            transition: all 1s;
+            opacity: 1;
+            cursor: pointer;
+        }
+        .info-icon{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: url("../images/info-pic-icon.png") no-repeat;
+            width: 74px;
+            height: 72px;
+        }
+        .text-area{
+            position: absolute;
+            transition: all 1s;
+            left: 0;
+            top: 0;
+            background: url("../images/info-text-bg.png") no-repeat;
+            width: 252px;
+            height: 247px;
+            opacity: 0;
+            .inner{
+                margin: 30px 23px 0 23px;
+            }
+            h3{
+                font-size: 20px;
+                color: #fff;
+                width: 120px;
+                padding-bottom: 4px;
+                border-bottom: #fff solid 2px;
+            }
+            .text{
+                margin-top: 5px;
+                height: 140px;
+                line-height: 20px;
+                overflow: hidden;
+                font-size: 13px;
+            }
+            .line{
+                margin-top: 5px;
+                width: 86px;
+                height: 6px;
+                background: #fff;
+            }
         }
     }
 }

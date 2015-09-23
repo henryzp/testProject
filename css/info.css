@@ -7,7 +7,7 @@
   float: left;
   width: 318px;
   min-height: 100px;
-  background: red;
+  background: #373a3f;
 }
 .info-box .info-list {
   margin-left: 355px;
@@ -17,10 +17,64 @@
 .info-box .info-list ul {
   margin-right: -44px;
 }
-.info-box .info-list li {
-  width: 251px;
-  height: 246px;
+.info-box .info-list .item {
+  width: 252px;
+  height: 247px;
   float: left;
   margin: 0 44px 44px 0;
-  background: green;
+  position: relative;
+}
+.info-box .info-list .item:hover .img-area {
+  opacity: 0;
+}
+.info-box .info-list .item:hover .text-area {
+  opacity: 1;
+}
+.info-box .info-list .img-area {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  opacity: 1;
+  cursor: pointer;
+}
+.info-box .info-list .info-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url("../images/info-pic-icon.png") no-repeat;
+  width: 74px;
+  height: 72px;
+}
+.info-box .info-list .text-area {
+  position: absolute;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  left: 0;
+  top: 0;
+  background: url("../images/info-text-bg.png") no-repeat;
+  width: 252px;
+  height: 247px;
+  opacity: 0;
+}
+.info-box .info-list .text-area .inner {
+  margin: 30px 23px 0 23px;
+}
+.info-box .info-list .text-area h3 {
+  font-size: 20px;
+  color: #fff;
+  width: 120px;
+  padding-bottom: 4px;
+  border-bottom: #fff solid 2px;
+}
+.info-box .info-list .text-area .text {
+  margin-top: 5px;
+  height: 140px;
+  line-height: 20px;
+  overflow: hidden;
+  font-size: 13px;
+}
+.info-box .info-list .text-area .line {
+  margin-top: 5px;
+  width: 86px;
+  height: 6px;
+  background: #fff;
 }
