@@ -42,9 +42,11 @@
   color: #fff;
   border-bottom: #44454A solid 1px;
 }
+.info-box .side-bar .nav-list .item:hover,
 .info-box .side-bar .nav-list .current {
   background: #282D33;
 }
+.info-box .side-bar .nav-list .item:hover a,
 .info-box .side-bar .nav-list .current a {
   color: #D3486F;
 }

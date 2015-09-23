@@ -1,0 +1,212 @@
+body{
+	background: #F5F5F5;
+}
+.course-box{
+	margin-top: 25px;
+	.search-box{
+		padding: 20px 0;
+		background: #373A3F;
+		text-align: center;
+		.search-input, .search-btn{
+			display: inline-block;
+			vertical-align: top;
+		}
+		.search-input{
+			width: 608px;
+			height: 26px;
+		}
+		.search-btn{
+			width: 132px;
+			height: 32px;
+			margin-left: 10px;
+			border: none;
+			background: #EF5B5F;
+			color: #fff;
+			font-size: 16px;
+		}
+	}
+	.search-bar{
+		margin-top: 18px;
+		color: #666;
+		font-size: 14px;
+		.left{
+			float: left;
+			strong{
+				color: #F15A5B;
+			}
+		}
+		.right{
+			float: right;
+			a{
+				margin-right: 15px;
+				color: #666;
+				&.current, &:hover{
+					color: #F15A5B;
+				}
+			}
+			.arrow{
+				font-family: "Arial";
+				position: relative;
+				top: -1px;
+				margin-left: 2px;
+			}
+		}
+	}
+	.search-result{
+		margin: 30px 0 100px;
+		.search-condition{
+			float: left;
+			width: 320px;
+			padding-bottom: 20px;
+			border-top: #373A3F solid 8px;
+			min-height: 200px;
+			background: #fff;
+			position: relative;
+			.line{
+				position: absolute;
+				top: -8px;
+				left: 0;
+				height: 8px;
+				background: #EF5B5F;
+				width: 100px;
+			}
+			.item{
+				margin: 0 12px;
+				padding: 20px 0 25px;
+				border-bottom: #E1E2E2 solid 1px;
+				&:last-child{
+					border-bottom: none;
+				}
+				i{
+					display: inline-block;
+					vertical-align: top;
+				}
+				.i1{
+					background: url("../images/course_i1.png") no-repeat;
+					width: 26px;
+					height: 26px;
+				}
+				.i2{
+					background: url("../images/course_i2.png") no-repeat;
+					width: 24px;
+					height: 24px;
+				}
+				.i3{
+					background: url("../images/course_i3.png") no-repeat;
+					width: 24px;
+					height: 24px;
+				}
+				.i4{
+					background: url("../images/course_i4.png") no-repeat;
+					width: 26px;
+					height: 26px;
+				}
+				.sort{
+					display: inline-block;
+					width: 245px;
+					h3{
+						font-size: 16px;
+						color: #666;
+						font-weight: normal;
+						margin-top: 3px;
+					}
+					ul{
+						margin-right: -15px;
+					}
+				}
+				.sub-item{
+					margin: 10px 15px 0 0;
+					display: inline-block;
+					font-size: 18px;
+					border: #A0A1A2 solid 1px;
+					height: 32px;
+					line-height: 32px;
+					min-width: 42px;
+					padding: 0 12px;
+					border-radius: 3px;
+					text-align: center;
+				}
+			}
+			.btns{
+				text-align: center;
+				.link{
+					border: none;
+					width: 126px;
+					height: 46px;
+					font-size: 20px;
+					line-height: 46px;
+					border-radius: 5px;
+					display: inline-block;
+					color: #fff;
+					text-align: center;
+				}
+				.link1{
+					background: #f15a5b;
+				}
+				.link2{
+					background: #373a3f;
+					margin-left: 10px;
+				}
+			}
+		}
+		.search-list{
+			margin-left: 356px;
+			overflow: hidden;
+			ul{
+				margin-right: -44px;
+			}
+			.item{
+				float: left;
+				margin: 0 44px 36px 0;
+				width: 252px;
+			}
+			.img-area{
+				position: relative;
+				width: 252px;
+				height: 246px;
+				.price{
+					background: #5B5E63;
+					position: absolute;
+					left: 0;
+					top: 24px;
+					padding-left: 9px;
+					width: 102px;
+					height: 30px;
+					font: 16px/34px "Arial";
+					color: #EF5B5F;
+				}
+			}
+			.text-area{
+				height: 92px;
+				background: #fff;
+				position: relative;
+				.tit{
+					padding-top: 16px;
+					margin: 0 10px;
+					height: 48px;
+					line-height: 24px;
+					font-size: 20px;
+					a{
+						color: #373a3f;
+						font-weight: bold;
+					}
+				}
+				.location{
+					position: absolute;
+					right: 10px;
+					bottom: 10px;
+					font-size: 14px;
+					color: #666;
+					i{
+						display: inline-block;
+						width: 21px;
+						height: 21px;
+						vertical-align: middle;
+						margin-right: 8px;
+						background: url("../images/couse-location.png") no-repeat;
+					}
+				}
+			}
+		}
+	}
+}

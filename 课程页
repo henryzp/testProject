@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程页</title>
+    <link  rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/course.css" />
+</head>
+<body>
+    <div class="page-head">
+        <div class="layout">
+            <div class="clearfix">
+                <div class="head-icon">
+                    <a href="#"><img src="images/de-head.png" alt=""/></a>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="logo"><a href="#"><img src="images/logo1.png"></a></div>
+                <div class="nav-box">
+                    <ul class="nav clearfix">
+                        <li class="current"><a href="#">首页</a></li>
+                        <li><a href="#">运动课程</a></li>
+                        <li><a href="#">运动旅行</a></li>
+                        <li><a href="#">运动资讯</a></li>
+                        <li><a href="#">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <a href="#" class="opt">注册</a>
+                    <a href="#" class="opt">登录</a>
+                    <a class="opt cart" href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content" class="layout">
+        <div class="course-box">
+            <div class="search-box">
+                <input type="text" class="search-input">
+                <button class="search-btn" type="button">搜索</button>
+            </div>
+            <div class="search-bar clearfix">
+                <span class="left">
+                    搜索结果：共有<strong>46</strong>个项目
+                </span>
+                <span class="right">
+                    排序：
+                    <a class="current" href="javascript:;">默认</a>
+                    <a href="javascript:;">按人气<span class="arrow">↑</span></a>
+                    <a href="javascript:;">按价格<span class="arrow">↓</span></a>
+                </span>
+            </div>
+            <div class="search-result clearfix">
+                <div class="search-condition">
+                    <div class="line"></div>
+                    <ul>
+                        <li class="item">
+                            <i class="i1"></i>
+                            <div class="sort">
+                                <h3>出行地区</h3>
+                                <ul>
+                                    <li class="sub-item">不限</li>
+                                    <li class="sub-item">国内</li>
+                                    <li class="sub-item">境外</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <i class="i2"></i>
+                            <div class="sort">
+                                <h3>活动环境类型</h3>
+                                <ul>
+                                    <li class="sub-item">海</li>
+                                    <li class="sub-item">陆</li>
+                                    <li class="sub-item">空</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <i class="i3"></i>
+                            <div class="sort">
+                                <h3>课程类型</h3>
+                                <ul>
+                                    <li class="sub-item">潜水</li>
+                                    <li class="sub-item">滑雪</li>
+                                    <li class="sub-item">跳伞</li>
+                                    <li class="sub-item">越野</li>
+                                    <li class="sub-item">冲浪</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <i class="i2"></i>
+                            <div class="sort">
+                                <h3>体验度检索</h3>
+                                <ul>
+                                    <li class="sub-item">休闲放松</li>
+                                    <li class="sub-item">时尚炫酷</li>
+                                    <li class="sub-item">极限挑战</li>
+                                    <li class="sub-item">视觉享受</li>
+                                    <li class="sub-item">探秘猎奇</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btns">
+                        <a class="link link1" href="javascript:;">搜索</a>
+                        <a class="link link2" href="javascript:;">重置</a>
+                    </div>
+                </div>
+                <div class="search-list">
+                    <ul class="clearfix">
+                        <li class="item">
+                            <div class="img-area">
+                                <img src="http://placehold.it/252x246" alt="">
+                                <span class="price">￥10000.00</span>
+                            </div>
+                            <div class="text-area">
+                                <div class="tit">
+                                    <a href="#">7天6夜户外露营冲浪营</a>
+                                </div>
+                                <div class="location">
+                                    <i></i>澳大利亚
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="img-area">
+                                <img src="http://placehold.it/252x246" alt="">
+                                <span class="price">￥10000.00</span>
+                            </div>
+                            <div class="text-area">
+                                <div class="tit">
+                                    <a href="#">7天6夜户外露营冲浪营7天6夜户外露</a>
+                                </div>
+                                <div class="location">
+                                    <i></i>澳大利亚
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="img-area">
+                                <img src="http://placehold.it/252x246" alt="">
+                                <span class="price">￥10000.00</span>
+                            </div>
+                            <div class="text-area">
+                                <div class="tit">
+                                    <a href="#">7天6夜户外露营冲浪营</a>
+                                </div>
+                                <div class="location">
+                                    <i></i>澳大利亚
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="img-area">
+                                <img src="http://placehold.it/252x246" alt="">
+                                <span class="price">￥10000.00</span>
+                            </div>
+                            <div class="text-area">
+                                <div class="tit">
+                                    <a href="#">7天6夜户外露营冲浪营7天6夜户外露</a>
+                                </div>
+                                <div class="location">
+                                    <i></i>澳大利亚
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="img-area">
+                                <img src="http://placehold.it/252x246" alt="">
+                                <span class="price">￥10000.00</span>
+                            </div>
+                            <div class="text-area">
+                                <div class="tit">
+                                    <a href="#">7天6夜户外露营冲浪营</a>
+                                </div>
+                                <div class="location">
+                                    <i></i>澳大利亚
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="img-area">
+                                <img src="http://placehold.it/252x246" alt="">
+                                <span class="price">￥10000.00</span>
+                            </div>
+                            <div class="text-area">
+                                <div class="tit">
+                                    <a href="#">7天6夜户外露营冲浪营7天6夜户外露</a>
+                                </div>
+                                <div class="location">
+                                    <i></i>澳大利亚
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-foot">
+        <div class="layout">
+            <div class="clearfix">
+                <ul class="share clearfix">
+                    <li class="c"><a href="javascript:void(0)"></a></li>
+                    <li class="weixin"><a href="javascript:void(0)"></a></li>
+                    <li class="qq"><a href="javascript:void(0)"></a></li>
+                    <li class="weibo"><a href="javascript:void(0)"></a></li>
+                </ul>
+            </div>
+            <div class="clearfix">
+                <div class="logo"><a href="#"><img src="images/logo2.png" alt=""/></a></div>
+                <ul class="info clearfix">
+                    <li>
+                        <dl>
+                            <dt>关于我们</dt>
+                            <dd><a href="#">/About</a></dd>
+                            <dd><a href="#">/Gurus</a></dd>
+                            <dd><a href="#">/Careers</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>合作伙伴</dt>
+                            <dd><a href="#">/Working Together</a></dd>
+                            <dd><a href="#">/Sign In to ZOZI Advance</a></dd>
+                            <dd><a href="#">/Merchant Portal</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>关于我们</dt>
+                            <dd><a href="#">/Email Us</a></dd>
+                            <dd><a href="#">/(855)937-1616</a></dd>
+                            <dd><a href="#">/Help</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">Copyright &copy; 2015 ZOZI.All Right Reserved.1 Beach St. Suite 300,San Francisco,CA 94133</div>
+    </div>
+</body>
+</html>
