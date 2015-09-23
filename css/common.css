@@ -328,3 +328,47 @@ a:hover {
 .page-foot .info > li a:hover {
   color: #f93262;
 }
+.page-banner .big-box {
+  height: 476px;
+  position: relative;
+  overflow: hidden;
+}
+.page-banner .big-box .full {
+  height: 100%;
+}
+.page-banner .big-box .full ul {
+  position: relative;
+  height: 100%;
+}
+.page-banner .big-box .full ul li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+.page-banner .big-box .full ul li a {
+  display: block;
+  height: 476px;
+}
+.page-banner .small-box {
+  margin-top: 12px;
+}
+.page-banner .small-box ul {
+  margin: 0 -4px;
+}
+.page-banner .small-box ul li {
+  display: inline;
+  float: left;
+  width: 294px;
+  height: 160px;
+  text-align: center;
+  margin: 0 4px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.page-banner .small-box ul li img {
+  vertical-align: bottom;
+  height: 160px;
+}
