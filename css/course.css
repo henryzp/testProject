@@ -132,6 +132,10 @@ body {
   border-radius: 3px;
   text-align: center;
 }
+.course-box .search-result .search-condition .item .sub-item.current {
+  border-color: #EF5B5F;
+  color: #EF5B5F;
+}
 .course-box .search-result .search-condition .btns {
   text-align: center;
 }
