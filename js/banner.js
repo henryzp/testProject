@@ -29,7 +29,11 @@
         _this.off("click.bannerSlideClick");
 
         _this.on("click.bannerSlideClick", ".Slide-ul-small li", function(){
-            slide(_this, $(this).index());
+            var old_idx = parseInt(_this.find(".Slide-ul-small li.active").attr("data-index")) || 0;
+            if(old_idx != $(this).index()){
+                slide(_this, $(this).index());
+            }
+
         });
 
         return this;

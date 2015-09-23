@@ -131,6 +131,7 @@ body {
   padding: 0 12px;
   border-radius: 3px;
   text-align: center;
+  cursor: pointer;
 }
 .course-box .search-result .search-condition .item .sub-item.current {
   border-color: #EF5B5F;
