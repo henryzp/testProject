@@ -7,7 +7,46 @@
   float: left;
   width: 318px;
   min-height: 100px;
+  padding-bottom: 56px;
   background: #373a3f;
+}
+.info-box .side-bar .hd {
+  margin: 50px 0 0 56px;
+}
+.info-box .side-bar .hd h2 {
+  font-size: 24px;
+  color: #fff;
+}
+.info-box .side-bar .hd h3 {
+  font-size: 18px;
+  color: #666768;
+}
+.info-box .side-bar .hd .line {
+  margin-top: 5px;
+  width: 38px;
+  height: 2px;
+  background: #D64669;
+  overflow: hidden;
+}
+.info-box .side-bar .nav-list {
+  margin-top: 25px;
+}
+.info-box .side-bar .nav-list .item {
+  height: 66px;
+  line-height: 66px;
+  font-size: 18px;
+}
+.info-box .side-bar .nav-list .item a {
+  display: block;
+  margin-left: 56px;
+  color: #fff;
+  border-bottom: #44454A solid 1px;
+}
+.info-box .side-bar .nav-list .current {
+  background: #282D33;
+}
+.info-box .side-bar .nav-list .current a {
+  color: #D3486F;
 }
 .info-box .info-list {
   margin-left: 355px;
@@ -32,7 +71,7 @@
 }
 .info-box .info-list .img-area {
   -webkit-transition: all 1s;
-  transition: all 1s;
+          transition: all 1s;
   opacity: 1;
   cursor: pointer;
 }
@@ -47,7 +86,7 @@
 .info-box .info-list .text-area {
   position: absolute;
   -webkit-transition: all 1s;
-  transition: all 1s;
+          transition: all 1s;
   left: 0;
   top: 0;
   background: url("../images/info-text-bg.png") no-repeat;
