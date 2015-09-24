@@ -1,9 +1,10 @@
 ;(function($){
+    var clock;
     var slide = function($elm,new_idx,flag){
         $elm.find(".Slide-ul-small li").removeClass("active");
         $elm.find(".Slide-ul-small li").eq(new_idx).addClass("active");
-        $elm.find(".Slide-ul-big li").fadeOut(1500);
-        $elm.find(".Slide-ul-big li").eq(new_idx).fadeIn(1500);
+        $elm.find(".Slide-ul-big li").fadeOut(1000);
+        $elm.find(".Slide-ul-big li").eq(new_idx).fadeIn(1000);
 
         if(flag){
             timer($elm);
@@ -11,7 +12,7 @@
     };
 
     var timer = function($elm){
-        setTimeout(function(){
+        clock = setTimeout(function(){
             var _len = $elm.find(".Slide-ul-small li").length,
                 old_idx = parseInt($elm.find(".Slide-ul-small li.active").attr("data-index")) || 0,
                 new_idx = old_idx + 1;
@@ -36,12 +37,11 @@
 
         });
 
+        _this.clear = function(){
+            clearTimeout(clock);
+        };
+
         return this;
     }
-
-    $(function () {
-        var a = $(".slide-demo").bannerSlide();
-    });
-
 
 })(jQuery);
