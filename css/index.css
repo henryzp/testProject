@@ -1,1 +1,181 @@
 @charset "utf-8";
+.page-index .w_1140 {
+  width: 1140px;
+  margin: 0 auto;
+}
+.page-index .even {
+  background-color: #fff;
+}
+.page-index .title-box {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+.page-index .title-box .t {
+  font-size: 50px;
+  font-family: "impact";
+  word-break: keep-all;
+  color: #f93262;
+}
+.page-index .title-box .t a {
+  color: #f93262;
+}
+.page-index .title-box .b {
+  margin: 0 auto;
+  width: 640px;
+  font-size: 32px;
+  line-height: 38px;
+  word-break: keep-all;
+  color: #1f1418;
+}
+.page-index .title-box .b a {
+  color: #1f1418;
+}
+.page-index .show-wrap {
+  background-color: #fff;
+}
+.page-index .show-box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.page-index .show-box .a {
+  width: 550px;
+  margin: 0 auto;
+  font-size: 62px;
+  line-height: 65px;
+  font-family: Arial;
+  word-break: keep-all;
+  color: #f93262;
+}
+.page-index .show-box .a a {
+  color: #f93262;
+}
+.page-index .show-box .b {
+  margin: 0 auto;
+  width: 640px;
+  font-size: 48px;
+  line-height: 50px;
+  word-break: keep-all;
+  color: #808183;
+}
+.page-index .show-box .b a {
+  color: #808183;
+}
+.page-index .show-box .arrow {
+  width: 57px;
+  height: 29px;
+  margin: 15px auto;
+  background: url(../images/jiantou.png) no-repeat 0 0;
+}
+.page-index .list-box {
+  padding: 55px 0;
+}
+.page-index .list-box .left {
+  display: inline;
+  float: left;
+  width: 229px;
+  padding-left: 13px;
+  height: 338px;
+  background-color: #373a3f;
+}
+.page-index .list-box .left .en {
+  margin-top: 50px;
+  font-size: 38px;
+  line-height: 42px;
+  font-family: Arial;
+  color: #f93262;
+}
+.page-index .list-box .left .en a {
+  color: #f93262;
+}
+.page-index .list-box .left .cn {
+  font-size: 32px;
+  line-height: 36px;
+  color: #fff;
+}
+.page-index .list-box .left .cn a {
+  color: #fff;
+}
+.page-index .list-box .left .line_1,
+.page-index .list-box .left .line_2 {
+  border-bottom: 1px solid #858688;
+  height: 12px;
+}
+.page-index .list-box .left .line_1 {
+  width: 205px;
+}
+.page-index .list-box .left .line_2 {
+  width: 160px;
+}
+.page-index .list-box .left .more {
+  margin-top: 130px;
+  color: #858688;
+  font-size: 18px;
+  font-family: Arial;
+}
+.page-index .list-box .left .more a {
+  color: #858688;
+}
+.page-index .list-box .left .more a:hover {
+  color: #f93262;
+}
+.page-index .list-box .right {
+  display: inline;
+  float: right;
+}
+.page-index .list-box .right .single > li {
+  display: inline;
+  float: left;
+  margin-left: 44px;
+  width: 252px;
+  background-color: #f5f5f5;
+}
+.page-index .list-box .right .single > li .img {
+  width: 252px;
+  height: 247px;
+}
+.page-index .list-box .right .single > li .img img {
+  width: 252px;
+  height: 247px;
+  vertical-align: top;
+}
+.page-index .list-box .right .single > li .name {
+  font-size: 20px;
+  color: #373a3f;
+  word-break: break-all;
+  margin: 5px 10px 0 10px;
+  height: 52px;
+  line-height: 26px;
+  overflow: hidden;
+}
+.page-index .list-box .right .single > li .name a {
+  color: #373a3f;
+  word-break: normal;
+}
+.page-index .list-box .right .single > li .name a:hover {
+  color: #f93262;
+}
+.page-index .list-box .right .single > li .address {
+  text-align: right;
+  height: 24px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+.page-index .list-box .right .single > li .address .icon-address {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 21px;
+  height: 21px;
+  background: url(../images/dingwei.png) no-repeat 0 0;
+  vertical-align: middle;
+}
+.page-index .list-box .right .single > li .address a,
+.page-index .list-box .right .single > li .address span {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  margin-left: 5px;
+}
