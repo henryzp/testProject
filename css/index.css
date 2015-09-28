@@ -68,6 +68,14 @@
   margin: 15px auto;
   background: url(../images/jiantou.png) no-repeat 0 0;
 }
+.page-index .hotAddress-wrap {
+  margin-top: -100px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.page-index .hotAddress-wrap img {
+  vertical-align: top;
+}
 .page-index .list-box {
   padding: 55px 0;
 }
