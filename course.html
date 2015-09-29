@@ -231,6 +231,16 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        $(".search-condition").on("click",".sub-item",function(){
+            var $this = $(this);
+            if($this.hasClass("current")){
+                $this.removeClass("current");
+            }else{
+                $this.addClass("current").siblings().removeClass("current");
+            }
+        })
+    </script>
     <div class="page-foot">
         <div class="layout">
             <div class="clearfix">
