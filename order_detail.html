@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>购物车</title>
+    <title>订单详情页</title>
     <link  rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/car.css" />
     <script src="js/jquery-1.10.2.min.js"></script>
@@ -37,142 +37,80 @@
 
     <div id="content" class="clearfix">
         <div class="car-box">
+            <div class="order-nav layout">
+                <ul class="clearfix">
+                    <li class="item1 current">订单已提交</li>
+                    <li class="arrow"></li>
+                    <li class="item2">订单审核中</li>
+                    <li class="arrow"></li>
+                    <li class="item3">订单进行中</li>
+                    <li class="arrow"></li>
+                    <li class="item4">订单结束</li>
+                </ul>
+            </div>
             <div class="car-table layout">
-                <h3>购物车</h3>
+                <h3>订单信息</h3>
                 <div class="car-list">
                     <table>
                         <colgroup>
-                            <col width="30" />
+                            <col width="120" />
                             <col width="150" />
                             <col />
                             <col width="150" />
                             <col width="150" />
+                            <col width="100" />
                             <col width="150" />
-                            <col width="150" />
-                            <col width="180" />
+                            <col width="160" />
                         </colgroup>
                         <thead>
                             <tr>
                                 <th></th>
-                                <th></th>
+                                <th>订单号</th>
                                 <th>商品名称</th>
                                 <th>类型</th>
                                 <th>单价</th>
                                 <th>人数</th>
-                                <th>金额</th>
-                                <th></th>
+                                <th class="ta-c">开始时间</th>
+                                <th class="ta-c">小计</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>
-                                    <input class="J_check-elem" type="checkbox">
-                                </td>
-                                <td>
                                     <a href="###">
                                         <img src="http://placehold.it/82x82" alt="">
                                     </a>
                                 </td>
+                                <td>1000010</td>
                                 <td>希腊潜水</td>
                                 <td>
                                     两天一夜
                                 </td>
                                 <td>
-                                    <span class="singlePrice">500</span>/人
+                                    500比索
                                 </td>
-                                <td>
-                                    <input class="J_num-input" type="number" min="1" value="1">
-                                </td>
-                                <td>
-                                    <span class="totalPrice">500</span>元
-                                </td>
-                                <td>
-                                    <a href="###">[编辑]</a>
-                                    <a class="ml_10 J_del-row" href="javascript:;">[删除]</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input class="J_check-elem" type="checkbox">
-                                </td>
-                                <td>
-                                    <a href="###">
-                                        <img src="http://placehold.it/82x82" alt="">
-                                    </a>
-                                </td>
-                                <td>希腊潜水</td>
-                                <td>
-                                    两天一夜
-                                </td>
-                                <td>
-                                    <span class="singlePrice">500</span>/人
-                                </td>
-                                <td>
-                                    <input class="J_num-input" type="number" min="1" value="1">
-                                </td>
-                                <td>
-                                    <span class="totalPrice">500</span>元
-                                </td>
-                                <td>
-                                    <a href="###">[编辑]</a>
-                                    <a class="ml_10 J_del-row" href="javascript:;">[删除]</a>
-                                </td>
+                                <td>6人</td>
+                                <td class="ta-c">2015年8月1日</td>
+                                <td class="ta-c">300000比索</td>
                             </tr>
                         </tbody>
                     </table>
-                </div>
-                <div class="car-btns">
-                    <a class="btn btn1 J_del-checked" href="javascript:;">删除所选</a>
-                    <a class="btn btn2" href="javascript:;">结算购物车</a>
+                    <div class="remark">
+                        备注: 希腊旅行
+                    </div>
+                    <div class="total-price mt_20">
+                        实付款：<strong>3000比索</strong>
+                    </div>
                 </div>
             </div>
-            <script>
-                //购物车的一些操作
-                $(function(){
-                    //数字变化
-                    $(".J_num-input").on("input",function(){
-                        var num = $(this).val(),
-                            $parent = $(this).parents("tr"),
-                            $singlePrice = $parent.find(".singlePrice"),
-                            $totalPrice = $parent.find(".totalPrice");
-                        if(num == ""){
-                            num = 1;
-                        }
-                        if(isNaN(num)){
-                            $(this).val("1");
-                            $totalPrice.html($singlePrice.html());
-                        }else{
-                            var num = parseInt(num);
-                            $(this).val(num);
-                            $totalPrice.html(num * $singlePrice.html());
-                        }
-                    })
-                    //删除某一行
-                    $(".J_del-row").on("click",function(){
-                        var flag = confirm("是否删除该条数据");
-                        if(flag){
-                            var $parent = $(this).parents("tr");
-                            $parent.remove();
-                        }
-                    })
-                    //删除选中的行
-                    $(".J_del-checked").on("click",function(){
-                        var checkTds = $(".J_check-elem:checked"), 
-                            i = 0,
-                            length = checkTds.length;
-                        if(length == 0){
-                            alert("请选择您要删除的数据");
-                            return;
-                        }
-                        var flag = confirm("是否删除这些数据");
-                        if(flag){
-                            for(i; i < length; i++){
-                                checkTds.eq(i).parents("tr").remove();
-                            }
-                        }
-                    })
-                })
-            </script>
+            <div class="safeguard-info layout mt_20">
+                <h3>保障信息/补充说明</h3>
+                <div class="info-list">
+                    <p>本项目不提供</p>
+                    <p>例如住宿、机票</p>
+                    <p>解释权归卖家所有</p>
+                </div>
+            </div>
             <div class="even">
                 <div class="w_1140">
                     <div class="list-box clearfix">
@@ -229,7 +167,6 @@
                     </div>
                 </div>
             </div>
-
             <div>
                 <div class="w_1140">
                     <div class="list-box clearfix">
@@ -286,7 +223,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 

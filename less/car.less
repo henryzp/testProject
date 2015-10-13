@@ -1,5 +1,45 @@
 .car-box{
   
+  .ta-c{
+    text-align: center;
+  }
+  .order-nav{
+    margin-top: 20px;
+    height: 48px;
+    background: #373a3f;
+    ul{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    li{
+      float: left;
+      line-height: 48px;
+      font-size: 20px;
+      color: #fff;
+      text-align: center;
+      &.current{
+        background: #f15a5b;
+      }
+      &.arrow{
+        background: url("../images/cart-nav-arrow.png") no-repeat;
+        margin: 11px 20px 0;
+        width: 16px;
+        height: 28px;
+      }
+    }
+    .item1{
+      width: 196px;
+    }
+    .item2{
+      width: 296px;
+    }
+    .item3{
+      width: 300px;
+    }
+    .item4{
+      width: 180px;
+    }
+  }
   .car-table{
   	padding: 30px 0;
   	h3{
@@ -7,6 +47,17 @@
   	   font-weight: bold;
   	   margin-bottom: 10px;
   	}	
+    .car-success-box{
+      padding-top: 105px;
+      height: 270px;
+      background: #fff;
+      text-align: center;
+      font-size: 24px;
+      .view-btn{
+        color: #f93262;
+        text-decoration: underline;
+      }
+    }
   	.car-list{
   		padding: 20px 10px;
   		background: #fff;
@@ -32,6 +83,27 @@
   			padding-left: 5px;
   			font-size: 18px;
   		}
+      .remark{
+        padding-top: 20px;
+        border-top: #e9e9e9 solid 1px;
+        font-size: 18px;
+        color: #666;
+        input{
+          width: 700px;
+          margin-left: 5px;
+          padding: 5px;
+          font-size: 100%;
+        }
+      }
+      .total-price{
+        text-align: right;
+        font-size: 28px;
+        margin-right: 30px;
+        strong{
+          color: #f93262;
+          font-family: "Arial";
+        }
+      }
   	}
   	.car-btns{
   		margin-top: 15px;
@@ -57,6 +129,23 @@
   	}
   }
 
+  .safeguard-info{
+    padding-bottom: 30px;
+    h3{
+      font-size: 20px;
+      font-weight: bold;
+      padding-bottom: 5px;
+      border-bottom: #e1e1e2 solid 1px;
+    }
+    .info-list{
+      margin-top: 10px;
+      color: #666;
+      font-size: 18px;
+      p{
+        margin-top: 6px;
+      }
+    }
+  }
 
   .w_1140{
     width: 1140px;

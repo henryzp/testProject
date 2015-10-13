@@ -371,6 +371,12 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+.mt_10 {
+  margin-top: 10px;
+}
+.mt_20 {
+  margin-top: 20px;
+}
 .ml_10 {
   margin-left: 10px;
 }
