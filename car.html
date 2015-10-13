@@ -81,7 +81,7 @@
                                     <span class="singlePrice">500</span>/人
                                 </td>
                                 <td>
-                                    <input class="J_num-input" type="number" min="1" value="1">
+                                    <input class="J_num-input" type="text" value="1">
                                 </td>
                                 <td>
                                     <span class="totalPrice">500</span>元
@@ -108,7 +108,7 @@
                                     <span class="singlePrice">500</span>/人
                                 </td>
                                 <td>
-                                    <input class="J_num-input" type="number" min="1" value="1">
+                                    <input class="J_num-input" type="text" value="1">
                                 </td>
                                 <td>
                                     <span class="totalPrice">500</span>元
@@ -130,7 +130,7 @@
                 //购物车的一些操作
                 $(function(){
                     //数字变化
-                    $(".J_num-input").on("input",function(){
+                    $(".J_num-input").on("keydown keyup blur",function(){
                         var num = $(this).val(),
                             $parent = $(this).parents("tr"),
                             $singlePrice = $parent.find(".singlePrice"),
