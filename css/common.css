@@ -151,6 +151,9 @@ a,
 a:hover {
   color: #333;
 }
+area:focus {
+  outline: none;
+}
 .page-head {
   background: #1c1f24;
 }
