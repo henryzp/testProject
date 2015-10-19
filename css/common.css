@@ -383,6 +383,14 @@ area:focus {
 .ml_10 {
   margin-left: 10px;
 }
+.f-lt {
+  *display: inline;
+  float: left;
+}
+.f-rt {
+  *display: inline;
+  float: right;
+}
 .pagination-wrap {
   padding-top: 15px;
   text-align: center;
