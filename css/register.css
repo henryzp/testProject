@@ -64,6 +64,7 @@
   background: #201f25;
   width: 106px;
   text-align: center;
+  cursor: pointer;
 }
 .register-box .register-form .form-input {
   display: inline-block;
