@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* @file ui-select.less 按钮样式
+ ---------------------------------------------------------------*/
+.dropdown,
+.ui-select {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	font-size: 20px;
+	vertical-align: middle;
+	color: #fff;
+	text-align: left;
+}
+.dropdown-trigger,
+.ui-select-hd {
+	float: left;
+	border: 1px solid #515355;
+	border-radius: 3px;
+	cursor: pointer;
+	line-height: 0;
+	background: #373a3f;
+}
+.ui-select-txt {
+	float: left;
+	height: 40px;
+	overflow: hidden;
+	margin: 0 5px 0 10px;
+	line-height: 40px;
+	white-space: nowrap;
+	word-break: keep-all;
+	text-overflow:ellipsis;
+}
+.ui-select-arrow {
+	position: relative;
+	float: left;
+	width: 40px;
+	height: 40px;
+	line-height: 0;
+	border-left: 1px solid #4c4d4c;
+}
+.ui-select-arrow b {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 0;
+	height: 0;
+	margin: -2px 0 0 -4px;
+	overflow: hidden;
+	border-width: 4px 4px 0px 4px;
+	border-style: solid;
+	border-color: #717375 transparent transparent transparent;
+}
+
+.ui-select-pop {
+	background-color: #ffffff;
+	border: 1px solid #515355;
+	border-radius: 3px;
+	text-align: left;
+}
+.ui-select-option {
+	padding: 4px 20px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.ui-select-option-hover {
+	color: #fff;
+	background: #373a3f;
+}
+.ui-select-option-selected {
+	color: #fff;
+	background: #373a3f;
+}
+.ui-select-pop dl,
+.ui-select-pop dd {
+	margin: 0;
+}
+.ui-select-mini .ui-select-txt {
+	height: 22px;
+	line-height: 22px;
+	margin: 0 0 0 8px;
+	font-size: 12px;
+}
+.ui-select-mini .ui-select-arrow {
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+}
+.ui-select-mini .ui-select-option {
+	padding: 4px 8px;
+}
+
+
+
