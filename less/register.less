@@ -33,11 +33,18 @@
 			margin-top: 40px;
 		}
 		.form-item{
+		  	position: relative;
 			float: left;
 			width: 490px;
 			margin-right: 30px;
 			margin-bottom: 10px;
 			height: 40px;
+		}
+	  	.error-msg{
+		  position: absolute;
+		  left: 120px;
+		  top: 100%;
+		  color:#f15a5b;
 		}
 		.form-required{
 			display: inline-block;
@@ -95,6 +102,11 @@
 				border: 0;
 				background: #f15a5b;
 				color: #fff;
+
+			  	&.disabled{
+				  background-color: #ddd;
+				  cursor: not-allowed;
+				}
 			}
 		}
 	}

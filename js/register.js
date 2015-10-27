@@ -100,4 +100,22 @@ jQuery(function($){
 
 	register.init();
 
+
+	$("body").on("keydown keyup blur", ".J_register-pwd_2", function(e){
+		if($(".J_register-pwd_1").val() !== $(this).val()){
+			$(this).siblings(".error-msg").show();
+		}else{
+			$(this).siblings(".error-msg").hide();
+		}
+	});
+
+
+	$("body").on("change", ".J_register-user-notice", function(e){
+		if(!$(this).prop("checked")){
+			$(".J_register-submit-btn").addClass("disabled");
+		}else{
+			$(".J_register-submit-btn").removeClass("disabled");
+		}
+	});
+
 });

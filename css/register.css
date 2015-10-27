@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root .register-box .inner-box {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 .register-box {
   background: url("../images/register-bg.jpg") center top no-repeat;
@@ -33,11 +34,18 @@
   margin-top: 40px;
 }
 .register-box .register-form .form-item {
+  position: relative;
   float: left;
   width: 490px;
   margin-right: 30px;
   margin-bottom: 10px;
   height: 40px;
+}
+.register-box .register-form .error-msg {
+  position: absolute;
+  left: 120px;
+  top: 100%;
+  color: #f15a5b;
 }
 .register-box .register-form .form-required {
   display: inline-block;
@@ -97,4 +105,8 @@
   border: 0;
   background: #f15a5b;
   color: #fff;
+}
+.register-box .register-form .argree-box .submit-btn.disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
 }
