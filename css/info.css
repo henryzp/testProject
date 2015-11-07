@@ -72,8 +72,7 @@
   opacity: 1;
 }
 .info-box .info-list .img-area {
-  -webkit-transition: all 1s;
-          transition: all 1s;
+  transition: all 1s;
   opacity: 1;
   cursor: pointer;
 }
@@ -87,8 +86,7 @@
 }
 .info-box .info-list .text-area {
   position: absolute;
-  -webkit-transition: all 1s;
-          transition: all 1s;
+  transition: all 1s;
   left: 0;
   top: 0;
   background: url("../images/info-text-bg.png") no-repeat;

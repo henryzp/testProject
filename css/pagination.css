@@ -1,0 +1,32 @@
+.pagination-wrap {
+  padding-top: 15px;
+  text-align: center;
+}
+.pagination-wrap .nav {
+  display: inline-block;
+  min-width: 80px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  font-size: 20px;
+  margin-right: 25px;
+  background-color: #d7d7d7;
+  color: #373a3f;
+}
+.pagination-wrap .nav:last-child {
+  margin-right: 0;
+}
+.pagination-wrap .nav:hover,
+.pagination-wrap .nav.current {
+  background: #f93262;
+  color: #fff;
+}
+.pagination-wrap .nav i {
+  font-family: consolas, "微软雅黑";
+}
+.pagination-wrap .ml_3 {
+  margin-left: 3px;
+}
+.pagination-wrap .mr_3 {
+  margin-right: 3px;
+}

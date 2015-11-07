@@ -1,0 +1,33 @@
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.layout {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mt_10 {
+  margin-top: 10px;
+}
+.mt_15 {
+  margin-top: 15px;
+}
+.mt_20 {
+  margin-top: 20px;
+}
+.ml_10 {
+  margin-left: 10px;
+}
+.f-lt {
+  *display: inline;
+  float: left;
+}
+.f-rt {
+  *display: inline;
+  float: right;
+}

@@ -369,10 +369,20 @@ area:focus {
   display: table;
   clear: both;
 }
+input,
+textarea {
+  font-size: 100%;
+}
 .layout {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+.ta-c {
+  text-align: center;
+}
+.ta-r {
+  text-align: right;
 }
 .mt_10 {
   margin-top: 10px;
@@ -382,6 +392,9 @@ area:focus {
 }
 .mt_20 {
   margin-top: 20px;
+}
+.ml_5 {
+  margin-left: 5px;
 }
 .ml_10 {
   margin-left: 10px;
@@ -501,15 +514,15 @@ area:focus {
   margin: 0;
 }
 .ui-select-mini .ui-select-txt {
-  height: 22px;
-  line-height: 22px;
+  height: 32px;
+  line-height: 32px;
   margin: 0 0 0 8px;
-  font-size: 12px;
+  font-size: 18px;
 }
 .ui-select-mini .ui-select-arrow {
   width: 22px;
-  height: 22px;
-  line-height: 22px;
+  height: 32px;
+  line-height: 32px;
 }
 .ui-select-mini .ui-select-option {
   padding: 4px 8px;

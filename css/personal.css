@@ -1,0 +1,443 @@
+@charset "UTF-8";
+.personal-box {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.personal-box .side-bar {
+  width: 300px;
+  float: left;
+  margin-right: 10px;
+  background: #1c1f24;
+  min-height: 200px;
+  font-size: 24px;
+  font-family: "微软雅黑";
+  text-align: center;
+}
+.personal-box .side-bar .hd {
+  height: 56px;
+  line-height: 56px;
+  background: #f15a5b;
+  color: #fff;
+}
+.personal-box .side-bar .bd {
+  margin: 0 18px;
+  padding-bottom: 60px;
+}
+.personal-box .side-bar li {
+  height: 64px;
+  line-height: 64px;
+  border-bottom: #535860 dashed 1px;
+}
+.personal-box .side-bar li a {
+  color: #9f9b9b;
+}
+.personal-box .side-bar li.current a {
+  color: #f15a5b;
+}
+.personal-box .main-con {
+  min-height: 100px;
+  background: #fff;
+  overflow: hidden;
+}
+.personal-box .info-form {
+  width: 600px;
+  padding: 35px 0 60px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  font-family: "微软雅黑";
+}
+.personal-box .info-form .update-btn-box {
+  margin-bottom: 20px;
+  text-align: right;
+}
+.personal-box .info-form .update-btn {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 3px;
+  padding: 0 15px;
+  background: #f15a5b;
+  color: #fff;
+}
+.personal-box .info-form .photo-box {
+  padding-top: 24px;
+  height: 80px;
+  background: #f5f5f5;
+  padding-left: 127px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.personal-box .info-form .photo-box .photo {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  top: 8px;
+  left: 10px;
+}
+.personal-box .info-form .photo-box li {
+  width: 170px;
+  float: left;
+  margin-bottom: 12px;
+}
+.personal-box .info-form .form-item {
+  float: left;
+  width: 224px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+.personal-box .info-form .job {
+  margin-bottom: 15px;
+}
+.personal-box .info-form .job label {
+  float: left;
+}
+.personal-box .info-form .job .desc {
+  min-height: 40px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.personal-box .info-form .job textarea {
+  height: 40px;
+  border: #cfcfcf solid 1px;
+  width: 480px;
+  padding: 5px;
+}
+.personal-box .info-form .qualification-box {
+  border-top: #e3e4e4 solid 1px;
+  padding-top: 10px;
+}
+.personal-box .info-form .qualification-box .item {
+  margin-bottom: 15px;
+}
+.personal-box .info-form .qualification-box .add-btn {
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 5px;
+  display: inline-block;
+  border: #f15a5b solid 1px;
+  color: #f15a5b;
+  text-align: center;
+  margin-left: 10px;
+}
+.personal-box .info-form .operation-box {
+  border-top: #e3e4e4 solid 1px;
+  padding-top: 15px;
+  text-align: center;
+}
+.personal-box .info-form .operation-box .btn {
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 5px;
+  display: inline-block;
+  border: #f15a5b solid 1px;
+  background: #f15a5b;
+  color: #fff;
+}
+.personal-box .list-box {
+  font-size: 18px;
+  font-family: "微软雅黑";
+  padding-bottom: 60px;
+}
+.personal-box .list-box .hd {
+  height: 56px;
+  background: #373a3f;
+  padding-left: 23px;
+  color: #fff;
+  position: relative;
+}
+.personal-box .list-box .hd h3 {
+  line-height: 56px;
+}
+.personal-box .list-box .hd .create-btn {
+  position: absolute;
+  width: 132px;
+  height: 40px;
+  line-height: 40px;
+  right: 15px;
+  top: 8px;
+  font-size: 20px;
+  background: #f15a5b;
+  text-align: center;
+  color: #fff;
+}
+.personal-box .list-box .list-table {
+  margin: 30px 20px 0;
+}
+.personal-box .list-box .list-table table {
+  width: 100%;
+}
+.personal-box .list-box .list-table th,
+.personal-box .list-box .list-table td {
+  padding: 12px 0;
+}
+.personal-box .list-box .list-table th {
+  border-bottom: #e3e4e4 solid 1px;
+  font-size: 20px;
+}
+.personal-box .list-box .list-table td {
+  border-bottom: #e9eaea dashed 1px;
+  color: #808183;
+}
+.personal-box .list-box .list-table .link {
+  color: #808183;
+  text-decoration: underline;
+}
+.personal-box .list-box .list-table .num {
+  color: #f15a5b;
+}
+.personal-box .create-form {
+  font-size: 18px;
+  font-family: "微软雅黑";
+}
+.personal-box .create-form .hd {
+  height: 56px;
+  background: #373a3f;
+  padding-left: 23px;
+  color: #fff;
+  position: relative;
+}
+.personal-box .create-form .hd h3 {
+  line-height: 56px;
+}
+.personal-box .create-form .bd {
+  margin: 35px 0 0 60px;
+}
+.personal-box .create-form .form-item {
+  margin-bottom: 15px;
+}
+.personal-box .create-form .form-item label {
+  float: left;
+  margin-right: 5px;
+  width: 112px;
+  text-align: right;
+  margin-top: 2px;
+}
+.personal-box .create-form .form-item .form-field,
+.personal-box .create-form .form-item .action-left {
+  margin-left: 122px;
+}
+.personal-box .create-form .form-item .form-input {
+  height: 16px;
+  width: 470px;
+}
+.personal-box .create-form .form-item .form-file-wrap {
+  display: inline-block;
+  padding: 0px;
+  width: 62px;
+  height: 32px;
+  border: #f15a5b solid 1px;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  vertical-align: top;
+  margin-left: 5px;
+}
+.personal-box .create-form .form-item .form-file-replace-text {
+  display: block;
+  line-height: 32px;
+  cursor: pointer;
+  color: #f15a5b;
+  text-align: center;
+}
+.personal-box .create-form .form-item .form-file {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  width: 64px;
+  height: 34px;
+  left: 0;
+  top: 0;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
+.personal-box .create-form .form-item textarea {
+  width: 478px;
+  height: 90px;
+  padding: 5px;
+  border: #cfcfcf solid 1px;
+}
+.personal-box .create-form .form-item .plus-icon,
+.personal-box .create-form .form-item .minus-icon {
+  display: inline-block;
+  width: 38px;
+  height: 34px;
+  vertical-align: top;
+  margin-left: 5px;
+}
+.personal-box .create-form .form-item .plus-icon {
+  background: url("../images/plus-icon.png") no-repeat;
+}
+.personal-box .create-form .form-item .minus-icon {
+  background: url("../images/minus-icon.png") no-repeat;
+}
+.personal-box .create-form .form-item .submit-btn,
+.personal-box .create-form .form-item .cancel-btn {
+  font-size: 20px;
+  width: 120px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+}
+.personal-box .create-form .form-item .submit-btn {
+  background: #f15a5b;
+  margin-right: 10px;
+}
+.personal-box .create-form .form-item .cancel-btn {
+  background: #373a3f;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.form-input {
+  height: 14px;
+  padding: 8px 8px;
+  line-height: 18px;
+  border-radius: 4px;
+  vertical-align: middle;
+  border: #cfcfcf solid 1px;
+}
+.form-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -366px;
+  margin-top: -298px;
+  width: 732px;
+  border: #f15a5b solid 1px;
+  min-height: 100px;
+  font-size: 18px;
+  font-family: "微软雅黑";
+}
+.form-popup .close {
+  font-size: 20px;
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  color: #fff;
+}
+.form-popup .hd {
+  height: 32px;
+  line-height: 32px;
+  padding-left: 15px;
+  color: #fff;
+  background: #424448;
+}
+.form-popup .bd {
+  background: #fff;
+  padding: 10px 60px;
+}
+.form-popup .photo-box {
+  padding-top: 24px;
+  height: 80px;
+  background: #f5f5f5;
+  padding-left: 127px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.form-popup .photo-box .photo {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  top: 8px;
+  left: 10px;
+}
+.form-popup .photo-box .form-input {
+  width: 100px;
+}
+.form-popup .form-item {
+  margin-top: 10px;
+}
+.form-popup .form-item label {
+  float: left;
+  margin-right: 5px;
+  width: 118px;
+  text-align: right;
+  margin-top: 3px;
+}
+.form-popup .form-item .form-field,
+.form-popup .form-item .action-left {
+  margin-left: 118px;
+}
+.form-popup .form-item .form-input {
+  width: 345px;
+}
+.form-popup .form-item .form-file-wrap {
+  display: inline-block;
+  padding: 0px;
+  width: 62px;
+  height: 32px;
+  border: #f15a5b solid 1px;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+  vertical-align: top;
+  margin-left: 5px;
+}
+.form-popup .form-item .form-file-replace-text {
+  display: block;
+  line-height: 32px;
+  cursor: pointer;
+  color: #f15a5b;
+  text-align: center;
+}
+.form-popup .form-item .form-file {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  width: 64px;
+  height: 34px;
+  left: 0;
+  top: 0;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
+.form-popup .form-item textarea {
+  width: 450px;
+  height: 30px;
+  padding: 5px;
+  border: #cfcfcf solid 1px;
+}
+.form-popup .form-item .add-btn {
+  border: #f15a5b solid 1px;
+  color: #f15a5b;
+  border-radius: 3px;
+  padding: 0 15px;
+  height: 32px;
+  line-height: 32px;
+  display: inline-block;
+}
+.form-popup .form-item .submit-btn,
+.form-popup .form-item .cancel-btn {
+  font-size: 20px;
+  width: 120px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+}
+.form-popup .form-item .submit-btn {
+  background: #f15a5b;
+  margin-right: 10px;
+}
+.form-popup .form-item .cancel-btn {
+  background: #373a3f;
+}
