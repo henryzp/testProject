@@ -233,7 +233,7 @@
                     </div>
                     <div class="form-item">
                         <div class="form-field">
-                            <a class="add-btn" href="###">添加教练资质2</a>
+                            <a class="add-btn J_add-item" href="javascript:;">添加教练资质</a>
                         </div>
                     </div>
                     <div class="form-item" style="margin-top: 25px;">
@@ -248,8 +248,32 @@
     </script>
     <script type="text/javascript">
     $(function(){
+
+        var num = 1;
+
+        function getTemplate(){
+            var str = ['<div class="form-item">',
+                        '<label>教练资质'+(num)+'：</label>',
+                        '<div class="form-field">',
+                            '<input class="form-input" type="text" />',
+                        '</div>',
+                    '</div>',
+                    '<div class="form-item">',
+                        '<label>教练资质照'+(num)+'：</label>',
+                        '<div class="form-field">',
+                            '<input class="form-input" type="text" />',
+                            '<div class="form-file-wrap">',
+                                '<span class="form-file-replace-text">上&nbsp;传</span>',
+                                '<input type="file" class="form-file" size="1" />',
+                            '</div>',
+                        '</div>',
+                    '</div>'];
+            return str.join("");
+        }
+
         $(".J_add-zizhi").on("click", function(){
             var len = $(".form-popup").length;
+            $(document.body).animate({scrollTop: 0}, 200);
             if(len > 0) {
                 $(".mask").show();
                 $(".form-popup").show();
@@ -260,6 +284,10 @@
         $(document).on("click", ".J_close-popup", function(){
             $(".mask").hide();
             $(".form-popup").hide();
+        })
+        $(document).on("click", ".J_add-item", function() {
+            num ++;
+            $(this).parents(".form-item").before(getTemplate());
         })
     })
     </script>
