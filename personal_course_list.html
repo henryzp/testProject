@@ -5,6 +5,17 @@
     <title>教练中心-我的课程列表页</title>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/personal.css" />
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".J_del-item").on("click", function(ev) {
+                var flag = confirm("是否确定删除");
+                if(flag){ 
+                    $(this).parents("tr").remove();
+                }
+            })
+        })
+    </script>
 </head>
 <body>
     <div class="page-head">
@@ -87,7 +98,7 @@
                             <td class="ta-c">未付款</td>
                             <td class="ta-r">
                                 <a class="link" href="###">编辑</a>
-                                <a class="link ml_5" href="###">删除</a>
+                                <a class="link ml_5 J_del-item" href="javascript:;">删除</a>
                             </td>
                         </tr>
                         <tr>
@@ -99,7 +110,7 @@
                             <td class="ta-c">未付款</td>
                             <td class="ta-r">
                                 <a class="link" href="###">编辑</a>
-                                <a class="link ml_5" href="###">删除</a>
+                                <a class="link ml_5 J_del-item" href="javascript:;">删除</a>
                             </td>
                         </tr>
                         <tr>
@@ -111,7 +122,7 @@
                             <td class="ta-c">未付款</td>
                             <td class="ta-r">
                                 <a class="link" href="###">编辑</a>
-                                <a class="link ml_5" href="###">删除</a>
+                                <a class="link ml_5 J_del-item" href="javascript:;">删除</a>
                             </td>
                         </tr>
                         <tr>
@@ -123,7 +134,7 @@
                             <td class="ta-c">未付款</td>
                             <td class="ta-r">
                                 <a class="link" href="###">编辑</a>
-                                <a class="link ml_5" href="###">删除</a>
+                                <a class="link ml_5 J_del-item" href="javascript:;">删除</a>
                             </td>
                         </tr>
                     </table>
