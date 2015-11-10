@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root .register-box .inner-box {
-  filter: none;
+  -webkit-filter: none;
+          filter: none;
 }
 .register-box {
   background: url("../images/register-bg.jpg") center top no-repeat;

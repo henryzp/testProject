@@ -215,21 +215,25 @@
                             <textarea></textarea>
                         </div>
                     </div>
-                    <div class="form-item">
-                        <label>教练资质1：</label>
-                        <div class="form-field">
-                            <input class="form-input" type="text" />
-                        </div>    
-                    </div>
-                    <div class="form-item">
-                        <label>教练资质照1：</label>
-                        <div class="form-field">
-                            <input class="form-input" type="text" />
-                            <div class="form-file-wrap">
-                                <span class="form-file-replace-text">上&nbsp;传</span>
-                                <input type="file" class="form-file" size="1" />
+                    <div class="J_coach-detail-box">
+                        <div class="J_coach-detail">
+                            <div class="form-item">
+                                <label>教练资质1：</label>
+                                <div class="form-field">
+                                    <input class="form-input" type="text" />
+                                </div>
                             </div>
-                        </div>    
+                            <div class="form-item">
+                                <label>教练资质照1：</label>
+                                <div class="form-field">
+                                    <input class="form-input" type="text" />
+                                    <div class="form-file-wrap">
+                                        <span class="form-file-replace-text">上&nbsp;传</span>
+                                        <input type="file" class="form-file" size="1" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="form-item">
                         <div class="form-field">
@@ -248,29 +252,6 @@
     </script>
     <script type="text/javascript">
     $(function(){
-
-        var num = 1;
-
-        function getTemplate(){
-            var str = ['<div class="form-item">',
-                        '<label>教练资质'+(num)+'：</label>',
-                        '<div class="form-field">',
-                            '<input class="form-input" type="text" />',
-                        '</div>',
-                    '</div>',
-                    '<div class="form-item">',
-                        '<label>教练资质照'+(num)+'：</label>',
-                        '<div class="form-field">',
-                            '<input class="form-input" type="text" />',
-                            '<div class="form-file-wrap">',
-                                '<span class="form-file-replace-text">上&nbsp;传</span>',
-                                '<input type="file" class="form-file" size="1" />',
-                            '</div>',
-                        '</div>',
-                    '</div>'];
-            return str.join("");
-        }
-
         $(".J_add-zizhi").on("click", function(){
             var len = $(".form-popup").length;
             $(document.body).animate({scrollTop: 0}, 200);
@@ -280,14 +261,37 @@
             }else{
                 $($("#pop-tpl").html()).appendTo($("body"));
             }
-        })
+        });
         $(document).on("click", ".J_close-popup", function(){
             $(".mask").hide();
             $(".form-popup").hide();
-        })
+        });
         $(document).on("click", ".J_add-item", function() {
-            num ++;
-            $(this).parents(".form-item").before(getTemplate());
+            var num = ($(".J_coach-detail-box").find(".J_coach-detail").length || 0) + 1;
+
+            var str = [
+                '<div class="J_coach-detail">',
+                '<div class="form-item">',
+                '<label>教练资质'+(num)+'：</label>',
+                '<div class="form-field">',
+                '<input class="form-input" type="text" />',
+                '</div>',
+                '</div>',
+                '<div class="form-item">',
+                '<label>教练资质照'+(num)+'：</label>',
+                '<div class="form-field">',
+                '<input class="form-input" type="text" />',
+                '<div class="form-file-wrap">',
+                '<span class="form-file-replace-text">上&nbsp;传</span>',
+                '<input type="file" class="form-file" size="1" />',
+                '</div>',
+                '</div>',
+                '</div>',
+                '</div>'
+            ];
+            var _html = str.join("");
+
+            $(".J_coach-detail-box").append(_html);
         })
     })
     </script>

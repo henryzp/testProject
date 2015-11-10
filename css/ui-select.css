@@ -74,15 +74,15 @@
   margin: 0;
 }
 .ui-select-mini .ui-select-txt {
-  height: 22px;
-  line-height: 22px;
+  height: 32px;
+  line-height: 32px;
   margin: 0 0 0 8px;
-  font-size: 12px;
+  font-size: 18px;
 }
 .ui-select-mini .ui-select-arrow {
   width: 22px;
-  height: 22px;
-  line-height: 22px;
+  height: 32px;
+  line-height: 32px;
 }
 .ui-select-mini .ui-select-option {
   padding: 4px 8px;

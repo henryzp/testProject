@@ -224,6 +224,9 @@
   height: 16px;
   width: 470px;
 }
+.personal-box .create-form .form-item .form-input.input-datepicker {
+  width: 200px;
+}
 .personal-box .create-form .form-item .form-file-wrap {
   display: inline-block;
   padding: 0px;
@@ -314,10 +317,9 @@
 }
 .form-popup {
   position: absolute;
-  top: 50%;
+  top: 50px;
   left: 50%;
   margin-left: -366px;
-  margin-top: -298px;
   width: 732px;
   border: #f15a5b solid 1px;
   min-height: 100px;
