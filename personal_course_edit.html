@@ -15,6 +15,8 @@
             $("input.J_input-datepicker").datepicker();
         })
     </script>
+    <script type="text/javascript" src="js/area.js"></script>
+    <script type="text/javascript" src="js/area-select.js"></script>
 </head>
 <body>
     <div class="page-head">
@@ -118,14 +120,14 @@
                         <div class="form-item">
                             <label>目的地</label>
                             <div class="form-field">
-                                <select style="width: 100px;" data-select-type="mini">
-                                    <option>中国</option>
+                                <select rel="330000" name="province" style="width: 100px;" data-select-type="mini">
+                                    <option>请选择省</option>
                                 </select>
-                                <select style="width: 100px;" data-select-type="mini">
-                                    <option>浙江</option>
+                                <select rel="330100" name="city" style="width: 100px;" data-select-type="mini">
+                                    <option>请选择市</option>
                                 </select>
-                                <select style="width: 100px;" data-select-type="mini">
-                                    <option>杭州</option>
+                                <select rel="330105" name="downtown" style="width: 100px;" data-select-type="mini">
+                                    <option>请选择区</option>
                                 </select>
                                 <span class="plus-icon"></span>
                             </div>
