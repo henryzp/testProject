@@ -79,7 +79,6 @@
         });
 
         var _auto = function(){
-            console.log(hover_flag);
             if(!hover_flag){
                 _slide_next();
             }
