@@ -12,6 +12,7 @@
             hover_flag = false,
             li_width = $this.find(".J_slide-item>li").width(),
             li_margin_h = parseInt($this.find(".J_slide-item>li").css("margin-left")) + parseInt($this.find(".J_slide-item>li").css("margin-right")) - 0,
+            _now_left = $this.find(".J_slide-box").position().left,
             slide_width = (li_width + li_margin_h) * 3,
             _width = $this.find(".J_slide-item").width();
 
