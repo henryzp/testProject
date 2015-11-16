@@ -1,13 +1,13 @@
 ;(function($){
 
-    $.fn.wSlide = function(cfg){
+    var wSlide = function(ele, cfg){
         var _cfg = {
             "speed": 800,
             "delay": 5000
         };
         $.extend(_cfg, (cfg || {}));
 
-        var $this = $(this),
+        var $this = $(ele),
             flag = false,
             hover_flag = false,
             li_width = $this.find(".J_slide-item>li").width(),
@@ -93,6 +93,17 @@
 
         _interval();
     };
+
+    $.fn.wSlide = function (cfg) {
+        return $.each($(this), function (key, val) {
+            var $this = $(this)
+                , data = $this.data('wSlide');
+
+            if (!data) {
+                $(val).data('wSlide', (data = new wSlide($(val), cfg)));
+            }
+        });
+    }
 
     $(function(){
         $(".J_slide-wrap").wSlide({
