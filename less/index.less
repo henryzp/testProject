@@ -154,8 +154,9 @@
     .right{
       display: inline;
       float: right;
+      position: relative;
 
-      .single{
+      >.single{
 
         &>li{
           display: inline;
@@ -181,6 +182,7 @@
             word-break: break-all;
             margin: 5px 10px 0 10px;
             height:52px;
+            max-height:52px;
             line-height: 26px;
             overflow: hidden;
 
@@ -220,6 +222,116 @@
           }
         }
 
+      }
+
+
+      .slide-wrap{
+        position: relative;
+        width: 844px;
+        height: 338px;
+        overflow: hidden;
+
+        >.prev,>.next{
+          width: 30px;
+          height: 50px;
+          background: url(../images/common-slide-arrow.png) no-repeat;
+          position: absolute;
+          top: 90px;
+          z-index: 99;
+          cursor: pointer;
+          filter: alpha(opacity=70);
+          opacity: 0.7;
+        }
+
+        >.prev{
+          background-position: 0 -60px;
+          left: 0px;
+        }
+
+        >.next{
+          background-position: 0 0;
+          right: 0px;
+        }
+
+        .single-slide-box{
+          overflow: hidden;
+          width: 99999px;
+          height: 338px;
+          position: absolute;
+          top:0;
+          left:0;
+
+          .single{
+            position: relative;
+            display: inline;
+            float: left;
+
+            &>li{
+              display: inline;
+              float: left;
+              margin-right: 44px;
+              width: 252px;
+              background-color: #f5f5f5;
+
+              .img{
+                width: 252px;
+                height: 247px;
+
+                img{
+                  width: 252px;
+                  height: 247px;
+                  vertical-align: top;
+                }
+              }
+
+              .name{
+                font-size: 20px;
+                color:#373a3f;
+                word-break: break-all;
+                margin: 5px 10px 0 10px;
+                height:52px;
+                max-height:52px;
+                line-height: 26px;
+                overflow: hidden;
+
+                a{
+                  color:#373a3f;
+                  word-break: normal;
+
+                  &:hover{
+                    color:#f93262;
+                  }
+                }
+              }
+
+              .address{
+                text-align: right;
+                height: 24px;
+                padding-bottom: 10px;
+                padding-right: 10px;
+
+                .icon-address{
+                  display: inline-block;
+                  *display: inline;
+                  *zoom: 1;
+                  width: 21px;
+                  height: 21px;
+                  background: url(../images/dingwei.png) no-repeat 0 0;
+                  vertical-align: middle;
+                }
+
+                a,span{
+                  display: inline-block;
+                  *display: inline;
+                  *zoom: 1;
+                  vertical-align: middle;
+                  margin-left: 5px;
+                }
+              }
+            }
+
+          }
+        }
       }
 
 

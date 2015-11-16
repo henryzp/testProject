@@ -131,46 +131,48 @@
 .page-index .list-box .right {
   display: inline;
   float: right;
+  position: relative;
 }
-.page-index .list-box .right .single > li {
+.page-index .list-box .right > .single > li {
   display: inline;
   float: left;
   margin-left: 44px;
   width: 252px;
   background-color: #f5f5f5;
 }
-.page-index .list-box .right .single > li .img {
+.page-index .list-box .right > .single > li .img {
   width: 252px;
   height: 247px;
 }
-.page-index .list-box .right .single > li .img img {
+.page-index .list-box .right > .single > li .img img {
   width: 252px;
   height: 247px;
   vertical-align: top;
 }
-.page-index .list-box .right .single > li .name {
+.page-index .list-box .right > .single > li .name {
   font-size: 20px;
   color: #373a3f;
   word-break: break-all;
   margin: 5px 10px 0 10px;
   height: 52px;
+  max-height: 52px;
   line-height: 26px;
   overflow: hidden;
 }
-.page-index .list-box .right .single > li .name a {
+.page-index .list-box .right > .single > li .name a {
   color: #373a3f;
   word-break: normal;
 }
-.page-index .list-box .right .single > li .name a:hover {
+.page-index .list-box .right > .single > li .name a:hover {
   color: #f93262;
 }
-.page-index .list-box .right .single > li .address {
+.page-index .list-box .right > .single > li .address {
   text-align: right;
   height: 24px;
   padding-bottom: 10px;
   padding-right: 10px;
 }
-.page-index .list-box .right .single > li .address .icon-address {
+.page-index .list-box .right > .single > li .address .icon-address {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -179,8 +181,103 @@
   background: url(../images/dingwei.png) no-repeat 0 0;
   vertical-align: middle;
 }
-.page-index .list-box .right .single > li .address a,
-.page-index .list-box .right .single > li .address span {
+.page-index .list-box .right > .single > li .address a,
+.page-index .list-box .right > .single > li .address span {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.page-index .list-box .right .slide-wrap {
+  position: relative;
+  width: 844px;
+  height: 338px;
+  overflow: hidden;
+}
+.page-index .list-box .right .slide-wrap > .prev,
+.page-index .list-box .right .slide-wrap > .next {
+  width: 30px;
+  height: 50px;
+  background: url(../images/common-slide-arrow.png) no-repeat;
+  position: absolute;
+  top: 90px;
+  z-index: 99;
+  cursor: pointer;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+}
+.page-index .list-box .right .slide-wrap > .prev {
+  background-position: 0 -60px;
+  left: 0px;
+}
+.page-index .list-box .right .slide-wrap > .next {
+  background-position: 0 0;
+  right: 0px;
+}
+.page-index .list-box .right .slide-wrap .single-slide-box {
+  overflow: hidden;
+  width: 99999px;
+  height: 338px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.page-index .list-box .right .slide-wrap .single-slide-box .single {
+  position: relative;
+  display: inline;
+  float: left;
+}
+.page-index .list-box .right .slide-wrap .single-slide-box .single > li {
+  display: inline;
+  float: left;
+  margin-right: 44px;
+  width: 252px;
+  background-color: #f5f5f5;
+}
+.page-index .list-box .right .slide-wrap .single-slide-box .single > li .img {
+  width: 252px;
+  height: 247px;
+}
+.page-index .list-box .right .slide-wrap .single-slide-box .single > li .img img {
+  width: 252px;
+  height: 247px;
+  vertical-align: top;
+}
+.page-index .list-box .right .slide-wrap .single-slide-box .single > li .name {
+  font-size: 20px;
+  color: #373a3f;
+  word-break: break-all;
+  margin: 5px 10px 0 10px;
+  height: 52px;
+  max-height: 52px;
+  line-height: 26px;
+  overflow: hidden;
+}
+.page-index .list-box .right .slide-wrap .single-slide-box .single > li .name a {
+  color: #373a3f;
+  word-break: normal;
+}
+.page-index .list-box .right .slide-wrap .single-slide-box .single > li .name a:hover {
+  color: #f93262;
+}
+.page-index .list-box .right .slide-wrap .single-slide-box .single > li .address {
+  text-align: right;
+  height: 24px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+.page-index .list-box .right .slide-wrap .single-slide-box .single > li .address .icon-address {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 21px;
+  height: 21px;
+  background: url(../images/dingwei.png) no-repeat 0 0;
+  vertical-align: middle;
+}
+.page-index .list-box .right .slide-wrap .single-slide-box .single > li .address a,
+.page-index .list-box .right .slide-wrap .single-slide-box .single > li .address span {
   display: inline-block;
   *display: inline;
   *zoom: 1;
