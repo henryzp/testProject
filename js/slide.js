@@ -7,8 +7,15 @@
         };
         $.extend(_cfg, (cfg || {}));
 
-        var $this = $(ele),
-            flag = false,
+
+
+        var $this = $(ele);
+
+        if(!$this.find(".J_slide-item>li").length || !$this.find(".J_slide-box").length){
+            return false;
+        }
+
+        var flag = false,
             hover_flag = false,
             li_width = $this.find(".J_slide-item>li").width(),
             li_margin_h = parseInt($this.find(".J_slide-item>li").css("margin-left")) + parseInt($this.find(".J_slide-item>li").css("margin-right")) - 0,
@@ -91,6 +98,8 @@
         }
 
         _interval();
+
+        return $this;
     };
 
     $.fn.wSlide = function (cfg) {
