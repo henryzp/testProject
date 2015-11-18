@@ -19,17 +19,17 @@ if (!Array.prototype.filter) {
     };
 }
 
-jQuery(function($) {
-
-    var $province = $('select[name="province"]'),
-        $city = $('select[name="city"]'),
-        $downtown = $('select[name="downtown"]');
+function initAreaSelect(contain){
+    var contain = $(contain);
+    var $province = $('select[name="province"]', contain),
+        $city = $('select[name="city"]', contain),
+        $downtown = $('select[name="downtown"]', contain);
 
     var provinceSel = $province.attr("rel"),
-    	citySel = $city.attr("rel"),
-    	downtownSel = $downtown.attr("rel");
+        citySel = $city.attr("rel"),
+        downtownSel = $downtown.attr("rel");
 
-    var data = _arrSort(_get_areaFilter(area_json, 1));
+    var data = _arrSort(_get_areaFilter(area_json, 0));
 
     $province.append(_get_html(data)).iSelect("update");
 
@@ -43,18 +43,18 @@ jQuery(function($) {
     });
 
     if(provinceSel){
- 		$province.val(provinceSel).iSelect('update');
+        $province.val(provinceSel).iSelect('update');
         _provinceChange(provinceSel);
     }
 
     if(provinceSel && citySel){
-		_cityChange(citySel);
-		$city.val(citySel).iSelect("update");
+        _cityChange(citySel);
+        $city.val(citySel).iSelect("update");
     }
 
-	if(provinceSel && citySel && downtownSel){
-		$downtown.val(downtownSel).iSelect("update");
-	}
+    if(provinceSel && citySel && downtownSel){
+        $downtown.val(downtownSel).iSelect("update");
+    }
 
 
     function _get_html(data) {
@@ -82,14 +82,19 @@ jQuery(function($) {
 
     function _provinceChange(id) {
         var data = _arrSort(_get_areaFilter(area_json, id));
-        $city.html('<option value="-1">请选择市</option>' + _get_html(data)).val('-1').iSelect("update");
-        $downtown.html('<option value="-1">请选择区</option>').iSelect("update");
+        $city.html('<option value="-1">请选择省</option>' + _get_html(data)).val('-1').iSelect("update");
+        $downtown.html('<option value="-1">请选择市</option>').iSelect("update");
     }
 
     function _cityChange(id) {
         var data = _arrSort(_get_areaFilter(area_json, id));
-        $downtown.html('<option value="-1">请选择区</option>' + _get_html(data)).val('-1').iSelect("update");
+        $downtown.html('<option value="-1">请选择市</option>' + _get_html(data)).val('-1').iSelect("update");
     }
+}
 
+jQuery(function($) {
+
+    initAreaSelect(".J_box1");
+    initAreaSelect(".J_box2");
 
 });
