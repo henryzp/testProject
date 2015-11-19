@@ -212,6 +212,11 @@
 .personal-box .create-form .form-item {
   margin-bottom: 15px;
 }
+.personal-box .create-form .form-item .m-address-box .address-item .ui-select {
+  float: left;
+  display: inline;
+  margin-right: 5px;
+}
 .personal-box .create-form .form-item label {
   float: left;
   margin-right: 5px;

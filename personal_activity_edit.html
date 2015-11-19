@@ -113,17 +113,19 @@
                         </div>
                         <div class="form-item">
                             <label>目的地</label>
-                            <div class="form-field">
-                                <select rel="330000" name="province" style="width: 100px;" data-select-type="mini">
-                                    <option>请选择省</option>
-                                </select>
-                                <select rel="330100" name="city" style="width: 100px;" data-select-type="mini">
-                                    <option>请选择市</option>
-                                </select>
-                                <select rel="330105" name="downtown" style="width: 100px;" data-select-type="mini">
-                                    <option>请选择区</option>
-                                </select>
-                                <span class="plus-icon"></span>
+                            <div class="form-field m-address-box J_address-box">
+                                <div class="address-item J_address J_address_1 clearfix">
+                                    <select rel="" name="country" style="width: 100px;" data-select-type="mini">
+                                        <option>国家</option>
+                                    </select>
+                                    <select rel="" name="province" style="width: 100px;" data-select-type="mini">
+                                        <option>省</option>
+                                    </select>
+                                    <select rel="" name="city" style="width: 100px;" data-select-type="mini">
+                                        <option>市</option>
+                                    </select>
+                                    <span class="plus-icon J_add-address"></span>
+                                </div>
                             </div>
                         </div>
                         <div class="form-item">
@@ -298,6 +300,41 @@
             $(document).on("click", ".J_delete-activity-plan", function() {
                 $(this).parents(".J_activity-plan").remove();
             });
+
+            //目的地
+            $.each($(".J_address-box .J_address"), function(key, val){
+                initAreaSelect($(val));
+            });
+
+            $(document).on("click", ".J_add-address", function(){
+                var num = ($(".J_address-box").find(".J_address").length || 0) + 1;
+
+                var str = [
+                    '<div class="address-item J_address J_address_'+ num +' clearfix" style="margin-top: 10px;">',
+                    '<select rel="" name="country" style="width: 100px;" data-select-type="mini">',
+                    '<option>国家</option>',
+                    '</select>',
+                    '<select rel="" name="province" style="width: 100px;" data-select-type="mini">',
+                    '<option>省</option>',
+                    '</select>',
+                    '<select rel="" name="city" style="width: 100px;" data-select-type="mini">',
+                    '<option>市</option>',
+                    '</select>',
+                    '<span class="plus-icon J_add-address"></span>',
+                    '<span class="minus-icon J_delete-address"></span>',
+                    '</div>'
+                ];
+
+                var $new = $(str.join(""));
+
+                $(".J_address-box").append($new);
+                $new.find("select").iSelect();
+                initAreaSelect($new);
+            });
+            $(document).on("click", ".J_delete-address", function() {
+                $(this).parents(".J_address").remove();
+            });
+
         })
     </script>
 </body>
