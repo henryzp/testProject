@@ -1,22 +1,26 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>购物车</title>
-    <link  rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/car.css" />
     <script src="js/jquery-1.10.2.min.js"></script>
 </head>
+
 <body>
     <div class="page-head">
         <div class="layout">
             <div class="clearfix">
                 <div class="head-icon">
-                    <a href="#"><img src="images/de-head.png" alt=""/></a>
+                    <a href="#"><img src="images/de-head.png" alt="" /></a>
                 </div>
             </div>
             <div class="clearfix">
-                <div class="logo"><a href="#"><img src="images/logo1.png"></a></div>
+                <div class="logo">
+                    <a href="#"><img src="images/logo1.png"></a>
+                </div>
                 <div class="nav-box">
                     <ul class="nav clearfix">
                         <li class="current"><a href="#">首页</a></li>
@@ -34,12 +38,10 @@
             </div>
         </div>
     </div>
-
     <div id="content" class="clearfix">
         <div class="car-box">
             <div class="car-table layout">
                 <h3>购物车</h3>
-
                 <div class="m-checkall">
                     <table>
                         <colgroup>
@@ -54,7 +56,9 @@
                         </colgroup>
                         <tbody>
                             <tr>
-                                <td><input class="checkbox J_check-elem-teach" type="checkbox"></td>
+                                <td>
+                                    <input class="checkbox J_check-all" type="checkbox">
+                                </td>
                                 <td>全选</td>
                                 <td>商品名称</td>
                                 <td>类型</td>
@@ -66,7 +70,6 @@
                         </tbody>
                     </table>
                 </div>
-
                 <div class="car-list-new">
                     <table>
                         <colgroup>
@@ -81,7 +84,9 @@
                         </colgroup>
                         <thead>
                             <tr>
-                                <th><input class="teach-checkbox J_check-elem-teach" type="checkbox"></th>
+                                <th>
+                                    <input class="teach-checkbox J_check-elem-teach" type="checkbox">
+                                </th>
                                 <th colspan="7">教练ID:1234580980</th>
                             </tr>
                         </thead>
@@ -109,7 +114,6 @@
                                     <span class="totalPrice">500</span>元
                                 </td>
                                 <td>
-                                    
                                     <a class="ml_10 J_del-row" href="javascript:;">[删除]</a>
                                 </td>
                             </tr>
@@ -136,7 +140,6 @@
                                     <span class="totalPrice">500</span>元
                                 </td>
                                 <td>
-                                    
                                     <a class="ml_10 J_del-row" href="javascript:;">[删除]</a>
                                 </td>
                             </tr>
@@ -156,138 +159,233 @@
                             <col width="180" />
                         </colgroup>
                         <thead>
-                        <tr>
-                            <th></th>
-                            <th></th>
-                            <th>商品名称</th>
-                            <th>类型</th>
-                            <th>单价</th>
-                            <th>人数</th>
-                            <th>金额</th>
-                            <th></th>
-                        </tr>
+                            <tr>
+                                <th>
+                                    <input class="teach-checkbox J_check-elem-teach" type="checkbox">
+                                </th>
+                                <th colspan="7">教练ID:1234580980</th>
+                            </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <td>
-                                <input class="J_check-elem" type="checkbox">
-                            </td>
-                            <td>
-                                <a href="###">
-                                    <img src="http://placehold.it/82x82" alt="">
-                                </a>
-                            </td>
-                            <td>希腊潜水</td>
-                            <td>
-                                两天一夜
-                            </td>
-                            <td>
-                                <span class="singlePrice">500</span>/人
-                            </td>
-                            <td>
-                                <input class="J_num-input" type="text" value="1">
-                            </td>
-                            <td>
-                                <span class="totalPrice">500</span>元
-                            </td>
-                            <td>
-                                
-                                <a class="ml_10 J_del-row" href="javascript:;">[删除]</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input class="J_check-elem" type="checkbox">
-                            </td>
-                            <td>
-                                <a href="###">
-                                    <img src="http://placehold.it/82x82" alt="">
-                                </a>
-                            </td>
-                            <td>希腊潜水</td>
-                            <td>
-                                两天一夜
-                            </td>
-                            <td>
-                                <span class="singlePrice">500</span>/人
-                            </td>
-                            <td>
-                                <input class="J_num-input" type="text" value="1">
-                            </td>
-                            <td>
-                                <span class="totalPrice">500</span>元
-                            </td>
-                            <td>
-                                
-                                <a class="ml_10 J_del-row" href="javascript:;">[删除]</a>
-                            </td>
-                        </tr>
+                            <tr>
+                                <td>
+                                    <input class="J_check-elem" type="checkbox">
+                                </td>
+                                <td>
+                                    <a href="###">
+                                        <img src="http://placehold.it/82x82" alt="">
+                                    </a>
+                                </td>
+                                <td>希腊潜水</td>
+                                <td>
+                                    两天一夜
+                                </td>
+                                <td>
+                                    <span class="singlePrice">500</span>/人
+                                </td>
+                                <td>
+                                    <input class="J_num-input" type="text" value="1">
+                                </td>
+                                <td>
+                                    <span class="totalPrice">500</span>元
+                                </td>
+                                <td>
+                                    <a class="ml_10 J_del-row" href="javascript:;">[删除]</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="J_check-elem" type="checkbox">
+                                </td>
+                                <td>
+                                    <a href="###">
+                                        <img src="http://placehold.it/82x82" alt="">
+                                    </a>
+                                </td>
+                                <td>希腊潜水</td>
+                                <td>
+                                    两天一夜
+                                </td>
+                                <td>
+                                    <span class="singlePrice">500</span>/人
+                                </td>
+                                <td>
+                                    <input class="J_num-input" type="text" value="1">
+                                </td>
+                                <td>
+                                    <span class="totalPrice">500</span>元
+                                </td>
+                                <td>
+                                    <a class="ml_10 J_del-row" href="javascript:;">[删除]</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="J_check-elem" type="checkbox">
+                                </td>
+                                <td>
+                                    <a href="###">
+                                        <img src="http://placehold.it/82x82" alt="">
+                                    </a>
+                                </td>
+                                <td>希腊潜水</td>
+                                <td>
+                                    两天一夜
+                                </td>
+                                <td>
+                                    <span class="singlePrice">500</span>/人
+                                </td>
+                                <td>
+                                    <input class="J_num-input" type="text" value="1">
+                                </td>
+                                <td>
+                                    <span class="totalPrice">500</span>元
+                                </td>
+                                <td>
+                                    <a class="ml_10 J_del-row" href="javascript:;">[删除]</a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="car-opt-box">
                     <div class="car-opt-left">
-                        <input type="checkbox" class="checkbpx"/>
+                        <input type="checkbox" class="checkbpx J_check-all" />
                         <span>全选</span>
                         <span class="delete">删除所选</span>
                     </div>
                     <div class="car-btns-new">
-                        <span class="mr">已选产品<i class="red">2</i>件</span>
+                        <span class="mr">已选产品<i class="red J_selected-num">0</i>件</span>
                         <span class="mr">
                             <span>合计：</span>
-                            <span class="red">￥10000</span>
+                        <span class="red J_selected-price">￥0</span>
                         </span>
                         <a class="btn btn2" href="javascript:;">结算购物车</a>
                     </div>
                 </div>
-
             </div>
             <script>
-                //购物车的一些操作
-                $(function(){
-                    //数字变化
-                    $(".J_num-input").on("keydown keyup blur",function(){
+            //购物车的一些操作
+            $(function() {
+                //数字变化
+                $(".J_num-input").on("keydown keyup blur", function() {
                         var num = $(this).val(),
                             $parent = $(this).parents("tr"),
                             $singlePrice = $parent.find(".singlePrice"),
                             $totalPrice = $parent.find(".totalPrice");
-                        if(num == ""){
+                        if (num == "") {
                             num = 1;
                         }
-                        if(isNaN(num)){
+                        if (isNaN(num)) {
                             $(this).val("1");
                             $totalPrice.html($singlePrice.html());
-                        }else{
+                        } else {
                             var num = parseInt(num);
                             $(this).val(num);
                             $totalPrice.html(num * $singlePrice.html());
                         }
                     })
                     //删除某一行
-                    $(".J_del-row").on("click",function(){
+                $(".J_del-row").on("click", function() {
                         var flag = confirm("是否删除该条数据");
-                        if(flag){
+                        if (flag) {
                             var $parent = $(this).parents("tr");
                             $parent.remove();
                         }
                     })
                     //删除选中的行
-                    $(".J_del-checked").on("click",function(){
-                        var checkTds = $(".J_check-elem:checked"), 
-                            i = 0,
-                            length = checkTds.length;
-                        if(length == 0){
-                            alert("请选择您要删除的数据");
-                            return;
+                $(".J_del-checked").on("click", function() {
+                    var checkTds = $(".J_check-elem:checked"),
+                        i = 0,
+                        length = checkTds.length;
+                    if (length == 0) {
+                        alert("请选择您要删除的数据");
+                        return;
+                    }
+                    var flag = confirm("是否删除这些数据");
+                    if (flag) {
+                        for (i; i < length; i++) {
+                            checkTds.eq(i).parents("tr").remove();
                         }
-                        var flag = confirm("是否删除这些数据");
-                        if(flag){
-                            for(i; i < length; i++){
-                                checkTds.eq(i).parents("tr").remove();
-                            }
+                    }
+                });
+                //复选框操作
+                $(".J_check-all").on("click", function() {
+                    var checked = $(this).prop("checked");
+                    $(".J_check-all").prop("checked", checked);
+                    $(".car-list-new").find("input[type='checkbox']").prop("checked", checked);
+                    handleSelectData();
+                });
+
+                $(".J_check-elem-teach").on("click", function() {
+                    var checked = $(this).prop("checked"),
+                        oparent = $(this).parents(".car-list-new");
+                    oparent.find("input[type='checkbox']").prop("checked", checked);
+                    if (!checked) {
+                        $(".J_check-all").prop("checked", false);
+                    }
+                    checkAll(".J_check-elem-teach");
+                    handleSelectData();
+                });
+
+                $(".J_check-elem").on("click", function() {
+                    var oparent = $(this).parents(".car-list-new"),
+                        $elem = oparent.find(".J_check-elem"),
+                        len = $elem.length,
+                        n = 0;
+
+                    $elem.each(function(index, obj) {
+                        if ($(obj).prop("checked")) {
+                            n++;
                         }
                     })
+
+                    if (len === n) {
+                        oparent.find(".J_check-elem-teach").prop("checked", true);
+                    } else {
+                        oparent.find(".J_check-elem-teach").prop("checked", false);
+                    }
+
+                    checkAll(".J_check-elem");
+                    handleSelectData();
                 })
+
+                function checkAll(str) {
+                    var $elem = $(".car-list-new").find(str);
+                    var len = $elem.length,
+                        n = 0;
+                    $elem.each(function(index, obj) {
+                        if ($(obj).prop("checked")) {
+                            n++;
+                        }
+                    });
+                    if (n === len) {
+                        $(".J_check-all").prop("checked", true);
+                    } else {
+                        $(".J_check-all").prop("checked", false);
+                    }
+                }
+
+                function handleSelectData() {
+                    var n = 0, price = 0;
+                    var $elem = $(".J_check-elem");
+                    $elem.each(function(){
+                        if($(this).prop("checked")) {
+                            n ++;
+                            var $tr = $(this).parents("tr"),
+                                $price = $tr.find(".totalPrice"),
+                                total = $price.html();
+                            price = (parseFloat(price) + parseFloat(total)).toFixed(2);
+                        }
+                    })
+
+                    $(".J_selected-num").html(n);
+                    $(".J_selected-price").html("￥" + price);
+
+                }
+
+
+            })
             </script>
             <div class="even">
                 <div class="w_1140">
@@ -304,20 +402,7 @@
                                 <li>
                                     <div class="img">
                                         <a href="">
-                                            <img src="http://placehold.it/252x247" alt=""/>
-                                        </a>
-                                        <span class="price">￥10000.00</span>
-                                    </div>
-                                    <div class="name"><a href="">Beginner African Dance Classes</a></div>
-                                    <div class="address">
-                                        <i class="icon-address"></i>
-                                        <span>NEW YORK</span>
-                                    </div>
-                                </li>
-                                <li>
-                                   <div class="img">
-                                        <a href="">
-                                            <img src="http://placehold.it/252x247" alt=""/>
+                                            <img src="http://placehold.it/252x247" alt="" />
                                         </a>
                                         <span class="price">￥10000.00</span>
                                     </div>
@@ -330,7 +415,20 @@
                                 <li>
                                     <div class="img">
                                         <a href="">
-                                            <img src="http://placehold.it/252x247" alt=""/>
+                                            <img src="http://placehold.it/252x247" alt="" />
+                                        </a>
+                                        <span class="price">￥10000.00</span>
+                                    </div>
+                                    <div class="name"><a href="">Beginner African Dance Classes</a></div>
+                                    <div class="address">
+                                        <i class="icon-address"></i>
+                                        <span>NEW YORK</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <a href="">
+                                            <img src="http://placehold.it/252x247" alt="" />
                                         </a>
                                         <span class="price">￥10000.00</span>
                                     </div>
@@ -345,7 +443,6 @@
                     </div>
                 </div>
             </div>
-
             <div>
                 <div class="w_1140">
                     <div class="list-box clearfix">
@@ -361,7 +458,7 @@
                                 <li>
                                     <div class="img">
                                         <a href="">
-                                            <img src="http://placehold.it/252x247" alt=""/>
+                                            <img src="http://placehold.it/252x247" alt="" />
                                         </a>
                                         <span class="price">￥10000.00</span>
                                     </div>
@@ -374,7 +471,7 @@
                                 <li>
                                     <div class="img">
                                         <a href="">
-                                            <img src="http://placehold.it/252x247" alt=""/>
+                                            <img src="http://placehold.it/252x247" alt="" />
                                         </a>
                                         <span class="price">￥10000.00</span>
                                     </div>
@@ -387,7 +484,7 @@
                                 <li>
                                     <div class="img">
                                         <a href="">
-                                            <img src="http://placehold.it/252x247" alt=""/>
+                                            <img src="http://placehold.it/252x247" alt="" />
                                         </a>
                                         <span class="price">￥10000.00</span>
                                     </div>
@@ -402,22 +499,30 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
     <div class="page-foot">
         <div class="layout">
             <div class="clearfix">
                 <ul class="share clearfix">
-                    <li class="c"><a href="javascript:void(0)"></a></li>
-                    <li class="weixin"><a href="javascript:void(0)"></a></li>
-                    <li class="qq"><a href="javascript:void(0)"></a></li>
-                    <li class="weibo"><a href="javascript:void(0)"></a></li>
+                    <li class="c">
+                        <a href="javascript:void(0)"></a>
+                    </li>
+                    <li class="weixin">
+                        <a href="javascript:void(0)"></a>
+                    </li>
+                    <li class="qq">
+                        <a href="javascript:void(0)"></a>
+                    </li>
+                    <li class="weibo">
+                        <a href="javascript:void(0)"></a>
+                    </li>
                 </ul>
             </div>
             <div class="clearfix">
-                <div class="logo"><a href="#"><img src="images/logo2.png" alt=""/></a></div>
+                <div class="logo">
+                    <a href="#"><img src="images/logo2.png" alt="" /></a>
+                </div>
                 <ul class="info clearfix">
                     <li>
                         <dl>
@@ -449,4 +554,5 @@
         <div class="copyright">Copyright &copy; 2015 ZOZI.All Right Reserved.1 Beach St. Suite 300,San Francisco,CA 94133</div>
     </div>
 </body>
+
 </html>
