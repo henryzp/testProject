@@ -109,11 +109,11 @@
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <span class="car-btn-in">-</span>
+                                        <span class="car-btn-in J_minus-btn">-</span>
                                         <div class="car-input-num">
                                             <input class="J_num-input" type="text" value="1">
                                         </div>
-                                        <span class="car-btn-plus">+</span>
+                                        <span class="car-btn-plus J_plus-btn">+</span>
                                     </div>
                                 </td>
                                 <td>
@@ -141,11 +141,11 @@
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <span class="car-btn-in">-</span>
+                                        <span class="car-btn-in J_minus-btn">-</span>
                                         <div class="car-input-num">
                                             <input class="J_num-input" type="text" value="1">
                                         </div>
-                                        <span class="car-btn-plus">+</span>
+                                        <span class="car-btn-plus J_plus-btn">+</span>
                                     </div>
                                 </td>
                                 <td>
@@ -197,11 +197,11 @@
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <span class="car-btn-in">-</span>
+                                        <span class="car-btn-in J_minus-btn">-</span>
                                         <div class="car-input-num">
                                             <input class="J_num-input" type="text" value="1">
                                         </div>
-                                        <span class="car-btn-plus">+</span>
+                                        <span class="car-btn-plus J_plus-btn">+</span>
                                     </div>
                                 </td>
                                 <td>
@@ -229,11 +229,11 @@
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <span class="car-btn-in">-</span>
+                                        <span class="car-btn-in J_minus-btn">-</span>
                                         <div class="car-input-num">
                                             <input class="J_num-input" type="text" value="1">
                                         </div>
-                                        <span class="car-btn-plus">+</span>
+                                        <span class="car-btn-plus J_plus-btn">+</span>
                                     </div>
                                 </td>
                                 <td>
@@ -261,11 +261,11 @@
                                 </td>
                                 <td>
                                     <div class="clearfix">
-                                        <span class="car-btn-in">-</span>
+                                        <span class="car-btn-in J_minus-btn">-</span>
                                         <div class="car-input-num">
                                             <input class="J_num-input" type="text" value="1">
                                         </div>
-                                        <span class="car-btn-plus">+</span>
+                                        <span class="car-btn-plus J_plus-btn">+</span>
                                     </div>
                                 </td>
                                 <td>
@@ -299,20 +299,41 @@
             $(function() {
                 //数字变化
                 $(".J_num-input").on("keyup", function() {
-                        var num = $(this).val(),
-                            $parent = $(this).parents("tr"),
-                            $singlePrice = $parent.find(".singlePrice"),
-                            $totalPrice = $parent.find(".totalPrice");
-                        num = num.replace(/[^(\d+\.)]/g, "");
-                        $(this).val(num);
-                        if (num == "") {
-                            $totalPrice.html("0")
-                        } else {
-                            $totalPrice.html(num * $singlePrice.html());
-                        }
-                        handleSelectData();
-                    })
-                    //删除某一行
+                    var num = $(this).val(),
+                        $parent = $(this).parents("tr"),
+                        $singlePrice = $parent.find(".singlePrice"),
+                        $totalPrice = $parent.find(".totalPrice");
+                    num = num.replace(/[^(\d+\.)]/g, "");
+                    $(this).val(num);
+                    if (num == "") {
+                        $totalPrice.html("0")
+                    } else {
+                        $totalPrice.html(num * $singlePrice.html());
+                    }
+                    handleSelectData();
+                });
+
+                $(".J_plus-btn, .J_minus-btn").on("click", function() {
+                    var $this = $(this),
+                        $parent = $this.parents("tr"),
+                        $input = $parent.find(".J_num-input"),
+                        $singlePrice = $parent.find(".singlePrice"),
+                        $totalPrice = $parent.find(".totalPrice"),
+                        num = parseInt($input.val());
+                    if ($this.hasClass("J_plus-btn")) {
+                        num = ++num;
+                    } else if ($this.hasClass("J_minus-btn")) {
+                        num = --num;
+                    }
+                    if (num <= 0) {
+                        num = 0;
+                    }
+                    $input.val(num);
+                    $totalPrice.html(num * $singlePrice.html());
+                    handleSelectData();
+                })
+
+                //删除某一行
                 $(".J_del-row").on("click", function() {
                         var flag = confirm("是否删除该条数据");
                         if (flag) {
