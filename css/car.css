@@ -146,7 +146,12 @@
 .car-box .car-table .car-list-new tbody tr:last-child td {
   border-bottom: none;
 }
-.car-box .car-table .car-list-new tbody input {
+.car-box .car-table .car-list-new tbody input[type="checkbox"] {
+  width: 40px;
+  text-align: center;
+  margin: 0;
+}
+.car-box .car-table .car-list-new .car-input-num input {
   width: 40px;
   font-size: 18px;
   height: 28px;
