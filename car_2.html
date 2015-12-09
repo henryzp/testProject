@@ -268,22 +268,19 @@
             //购物车的一些操作
             $(function() {
                 //数字变化
-                $(".J_num-input").on("keydown keyup blur", function() {
+                $(".J_num-input").on("keyup", function() {
                         var num = $(this).val(),
                             $parent = $(this).parents("tr"),
                             $singlePrice = $parent.find(".singlePrice"),
                             $totalPrice = $parent.find(".totalPrice");
+                        num = num.replace(/[^(\d+\.)]/g, "");
+                        $(this).val(num);
                         if (num == "") {
-                            num = 1;
-                        }
-                        if (isNaN(num)) {
-                            $(this).val("1");
-                            $totalPrice.html($singlePrice.html());
+                            $totalPrice.html("0")
                         } else {
-                            var num = parseInt(num);
-                            $(this).val(num);
                             $totalPrice.html(num * $singlePrice.html());
                         }
+                        handleSelectData();
                     })
                     //删除某一行
                 $(".J_del-row").on("click", function() {
@@ -291,6 +288,7 @@
                         if (flag) {
                             var $parent = $(this).parents("tr");
                             $parent.remove();
+                            handleSelectData();
                         }
                     })
                     //删除选中的行
@@ -307,6 +305,7 @@
                         for (i; i < length; i++) {
                             checkTds.eq(i).parents("tr").remove();
                         }
+                        handleSelectData();
                     }
                 });
                 //复选框操作
@@ -367,11 +366,12 @@
                 }
 
                 function handleSelectData() {
-                    var n = 0, price = 0;
+                    var n = 0,
+                        price = 0;
                     var $elem = $(".J_check-elem");
-                    $elem.each(function(){
-                        if($(this).prop("checked")) {
-                            n ++;
+                    $elem.each(function() {
+                        if ($(this).prop("checked")) {
+                            n++;
                             var $tr = $(this).parents("tr"),
                                 $price = $tr.find(".totalPrice"),
                                 total = $price.html();

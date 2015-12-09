@@ -130,20 +130,16 @@
                 //购物车的一些操作
                 $(function(){
                     //数字变化
-                    $(".J_num-input").on("keydown keyup blur",function(){
+                    $(".J_num-input").on("keyup",function(){
                         var num = $(this).val(),
                             $parent = $(this).parents("tr"),
                             $singlePrice = $parent.find(".singlePrice"),
                             $totalPrice = $parent.find(".totalPrice");
-                        if(num == ""){
-                            num = 1;
-                        }
-                        if(isNaN(num)){
-                            $(this).val("1");
-                            $totalPrice.html($singlePrice.html());
-                        }else{
-                            var num = parseInt(num);
-                            $(this).val(num);
+                        num = num.replace(/[^(\d+\.)]/g, "");
+                        $(this).val(num);
+                        if (num == "") {
+                            $totalPrice.html("0")
+                        } else {
                             $totalPrice.html(num * $singlePrice.html());
                         }
                     })
